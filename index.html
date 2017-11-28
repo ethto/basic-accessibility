@@ -4,13 +4,18 @@
   <meta charset="utf-8">
   <title></title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="scc/main.css" rel="stylesheet">
+  <link href="css/modules.css" rel="stylesheet">
 </head>
 <body>
 
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a> </li>
+  </ul>
+
   <header role="banner">
     <h1>Pangolin</h1>
-    <nav role="navigation">
+    <nav role="navigation" id="nav" tabindex="0">
       <ul>
         <li><a href="description">Description</a></li>
         <li><a href="behaviour">Behaviour</a></li>
@@ -19,10 +24,26 @@
     </nav>
   </header>
 
-  <main role="main">
+  <main role="main" id="main" tabindex="0">
+    <img src="images/map.jpg" alt="" aria-details="countries">
 
     <section id="description" tabindex="0">
       <h2>Description</h2>
+
+      <div id="countries">
+        <h3>Some countries where pangolins are found</h3>
+        <ol>
+          <li>Botswana</li>
+          <li>Kenya</li>
+          <li>Mosambique</li>
+          <li>Nanibia</li>
+          <li>South Africa</li>
+          <li>Tanzania</li>
+          <li>Uganda</li>
+          <li>Zambia</li>
+          <li>Zimbabwe</li>
+        </ol>
+      </div>
     </section>
 
     <section id="behaviour" tabindex="0">
